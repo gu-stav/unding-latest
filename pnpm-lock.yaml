@@ -2,12 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@auth/core': ^0.4.0
-  '@unding/cli': ^0.0.1
+  '@unding/cli': ^0.0.2
   '@unding/studio': ^0.0.1
 
 dependencies:
   '@auth/core': 0.4.0
-  '@unding/cli': 0.0.1
+  '@unding/cli': 0.0.2
   '@unding/studio': 0.0.1
 
 packages:
@@ -327,8 +327,8 @@ packages:
     resolution: {integrity: sha512-COUnqfB2+ckwXXSFInsFdOAWQzCCx+a5hq2ruyj+Vjund94RJQd4LG2u9hnvJrTgunKAaax7ancBYlDrNYxA0g==}
     dev: false
 
-  /@unding/cli/0.0.1:
-    resolution: {integrity: sha512-QE/qMiIWe6fWA3BYsSkIks7LbJXqLk4fmUaFqt/j7a0aH0qsEwpsmML5QnyY0gHXL2N6mnyW/aKVifCazhnYHw==}
+  /@unding/cli/0.0.2:
+    resolution: {integrity: sha512-Kf8iV6ciwE+bCJuzU6wfm/S2YxJO5BAyZ9dVfP/oVV0yBhYNMFLw/l513muaVsgCIAgYZZH1S/mh+c4brZltCA==}
     hasBin: true
     dependencies:
       commander: 9.5.0
