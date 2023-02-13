@@ -6,6 +6,9 @@
         "@unding/cli": "^0.0.3",
         "@unding/studio": "^0.0.3"
     },
+    "engines": {
+        "node": ">=16"
+    },
     "scripts": {
         "dev": "unding dev",
         "build": "unding build",
