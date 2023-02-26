@@ -3,8 +3,8 @@
     "private": true,
     "dependencies": {
         "@auth/core": "^0.4.0",
-        "@unding/cli": "^0.0.3",
-        "@unding/studio": "^0.0.3"
+        "@unding/cli": "^0.0.4",
+        "@unding/studio": "^0.0.4"
     },
     "engines": {
         "node": ">=16"
@@ -12,7 +12,7 @@
     "scripts": {
         "dev": "unding dev",
         "build": "unding build",
-        "preview": "unding preview"
+        "start": "unding start"
     },
     "type": "module"
 }
