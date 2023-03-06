@@ -2,9 +2,9 @@
     "name": "unding-latest",
     "private": true,
     "dependencies": {
-        "@auth/core": "^0.4.0",
-        "@unding/cli": "^0.0.4",
-        "@unding/studio": "^0.0.4"
+        "@auth/core": "^0.5.1",
+        "@unding/cli": "^0.0.5",
+        "@unding/studio": "^0.0.5"
     },
     "engines": {
         "node": ">=16"
