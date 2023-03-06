@@ -2,31 +2,21 @@ lockfileVersion: 5.4
 
 specifiers:
   '@auth/core': ^0.5.1
+  '@sveltejs/kit': ^1.10.0
   '@unding/cli': ^0.0.5
-  '@unding/studio': ^0.0.5
+  '@unding/studio': ^0.0.6
+  svelte: ^3.54.0
+  vite: ^4.1.4
 
 dependencies:
   '@auth/core': 0.5.1
-  '@unding/cli': 0.0.5_@unding+studio@0.0.5
-  '@unding/studio': 0.0.5
+  '@sveltejs/kit': 1.10.0_svelte@3.55.1+vite@4.1.4
+  '@unding/cli': 0.0.5_@unding+studio@0.0.6
+  '@unding/studio': 0.0.6_kokhmzi6jivufwdgknklpwlj5i
+  svelte: 3.55.1
+  vite: 4.1.4
 
 packages:
-
-  /@auth/core/0.4.0:
-    resolution: {integrity: sha512-wHVljvVGPmKSjlxQUYZCOL4GGe26YqhT351sA2REE43YskaqRMYh1TVjBxpXcdG8/P8bw2DsHgl+aBEV3P5+KQ==}
-    peerDependencies:
-      nodemailer: ^6.8.0
-    peerDependenciesMeta:
-      nodemailer:
-        optional: true
-    dependencies:
-      '@panva/hkdf': 1.0.4
-      cookie: 0.5.0
-      jose: 4.13.1
-      oauth4webapi: 2.1.0
-      preact: 10.11.3
-      preact-render-to-string: 5.2.3_preact@10.11.3
-    dev: false
 
   /@auth/core/0.5.1:
     resolution: {integrity: sha512-t9z8F7dkuVceKWBmMy1fd2t6H+vfRju/YJ1lm+6RnJ7pNEvX5qMR874wg0+cYbWvyZazLi8fFK/FA6I3D5sSkA==}
@@ -44,13 +34,13 @@ packages:
       preact-render-to-string: 5.2.3_preact@10.11.3
     dev: false
 
-  /@auth/sveltekit/0.2.2_nbkxm6775dsnyd2fz5a5r4uvyi:
-    resolution: {integrity: sha512-8PL1120J22RrmsGu8VXTeUvTldSNRqvs/hhEsx9DYswdS5o4umhXsJI5JDbBS3hzpuq7i4LgVEOueW7zQgn9dg==}
+  /@auth/sveltekit/0.3.0_nbkxm6775dsnyd2fz5a5r4uvyi:
+    resolution: {integrity: sha512-J9uwaKadzPaQMYec9CYpa9WAjV5EIMEhj4vTuJH6HTp2FJOOJQB5t19WqWv9rYzBVm2rBTPPplQXPI5UKOvg4Q==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
       svelte: ^3.54.0
     dependencies:
-      '@auth/core': 0.4.0
+      '@auth/core': 0.5.1
       '@sveltejs/kit': 1.10.0_svelte@3.55.1+vite@4.1.4
       svelte: 3.55.1
     transitivePeerDependencies:
@@ -423,47 +413,46 @@ packages:
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
     dev: false
 
-  /@unding/cli/0.0.5_@unding+studio@0.0.5:
+  /@unding/cli/0.0.5_@unding+studio@0.0.6:
     resolution: {integrity: sha512-5kfOw682zdHdoWltLLnPxkaLmq954Wtjr2khHgFQkG67yRj8GwenNXDbr25pk32hedTEKXWlWll1Uqv/o47gZg==}
     hasBin: true
     peerDependencies:
       '@unding/studio': 0.0.5
     dependencies:
-      '@unding/studio': 0.0.5
+      '@unding/studio': 0.0.6_kokhmzi6jivufwdgknklpwlj5i
       commander: 9.5.0
       dotenv: 16.0.3
       execa: 7.0.0
       ora: 6.1.2
     dev: false
 
-  /@unding/studio/0.0.5:
-    resolution: {integrity: sha512-KWwjHo4asnaAR4h/KxtOcZ9uBo531JvCC+cpmlucmzC2TjFlkc4GlhNuhyfVAlX2T93bcQmdTbc8mDWyOvygsA==}
+  /@unding/studio/0.0.6_kokhmzi6jivufwdgknklpwlj5i:
+    resolution: {integrity: sha512-pcmGl8Nt1uReQQHoPLDmv1VunFr0xekTRo9mTAzyFLz8vX5kIRGhlVJjino5ZN2apEkNfj1P2Ot94wBQtoaEzQ==}
+    peerDependencies:
+      '@sveltejs/kit': ^1.10.0
+      svelte: ^3.54.0
+      vite: ^4.1.4
     dependencies:
       '@auth/core': 0.5.1
-      '@auth/sveltekit': 0.2.2_nbkxm6775dsnyd2fz5a5r4uvyi
+      '@auth/sveltekit': 0.3.0_nbkxm6775dsnyd2fz5a5r4uvyi
       '@sveltejs/adapter-node': 1.2.1_@sveltejs+kit@1.10.0
       '@sveltejs/kit': 1.10.0_svelte@3.55.1+vite@4.1.4
-      '@unding/ui': 0.0.3
+      '@unding/ui': 0.0.4
       autoprefixer: 10.4.13_postcss@8.4.21
       express: 4.18.2
       postcss: 8.4.21
       svelte: 3.55.1
       tailwindcss: 3.2.7
       vite: 4.1.4
+      zod: 3.21.2
     transitivePeerDependencies:
-      - '@types/node'
-      - less
       - nodemailer
-      - sass
-      - stylus
-      - sugarss
       - supports-color
-      - terser
       - ts-node
     dev: false
 
-  /@unding/ui/0.0.3:
-    resolution: {integrity: sha512-KcV0pygzqGdXzDdF7US3WB3EJ/0Hjs0vFQcOTCnmAVGsn43YsNb0q1NyA65Vs1uVQoenfT4DNo3vLKRxpXBlbw==}
+  /@unding/ui/0.0.4:
+    resolution: {integrity: sha512-jahFjMflEvfbREe+ThggpA1j1w5NZn1Z/LQHJYOiiRLSQIbhM0zOHJpXdJ6FNYwqg91Y77Eu/+M/LuqJ0y3V4A==}
     dependencies:
       clsx: 1.2.1
     dev: false
@@ -1919,4 +1908,8 @@ packages:
   /yaml/1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
+    dev: false
+
+  /zod/3.21.2:
+    resolution: {integrity: sha512-0Ygy2/IZNIxHterZdHjE5Vb8hp1fUHJD/BGvSHj8QJx+UipEVNvo9WLchoyBpz5JIaN6KmdGDGYdloGzpFK98g==}
     dev: false
