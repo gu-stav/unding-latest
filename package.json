@@ -2,19 +2,20 @@
     "name": "unding-latest",
     "private": true,
     "dependencies": {
-        "@sveltejs/kit": "^1.10.0",
         "@auth/core": "^0.5.1",
-        "@unding/cli": "^0.0.6",
-        "@unding/studio": "^0.0.7",
-        "svelte": "^3.54.0",
-        "vite": "^4.1.4"
+        "@sveltejs/adapter-node": "^1.2.3",
+        "@sveltejs/kit": "^1.15.2",
+        "@unding/kit": "^0.0.8",
+        "@unding/studio": "^0.0.8",
+        "svelte": "^3.58.0",
+        "vite": "^4.2.1"
     },
     "engines": {
         "node": ">=16"
     },
     "scripts": {
-        "dev": "unding dev",
-        "build": "unding build",
+        "dev": "unding dev && vite dev",
+        "build": "unding build && vite build",
         "start": "unding start"
     },
     "type": "module"
